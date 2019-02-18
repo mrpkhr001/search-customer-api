@@ -12,7 +12,6 @@ exports.nameSearch = (req, res) => {
 };
 
 exports.addCustomer = (req, res) => {
-  console.log(req.body);
   const customer = new Customer(req.body);
   return customer
       .save()

@@ -7,7 +7,6 @@ exports.login = passport.authenticate('local', {
 });
 
 exports.isLoggedIn = (req, res, next) =>{
-    console.log(`is User authenticated : ${req.isAuthenticated()}`);
     if(req.isAuthenticated()){
         next();
         return;

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to our Database and handle an bad connections
-console.log(process.env.DATABASE);
+
 mongoose.connect(process.env.DATABASE,  { useNewUrlParser: true });
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 mongoose.connection.on('error', (err) => {
