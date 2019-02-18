@@ -1,0 +1,37 @@
+{
+  "name": "customer-search-api",
+  "version": "1.0.0",
+  "description": "A Express app with mongoDB to search customer names",
+  "main": "index.js",
+  "scripts": {
+    "prod": "node ./backend/start.js",
+    "test": "test",
+    "watch": "nodemon ./backend/start.js --ignore public/",
+    "start": "concurrently \"npm run watch\" --names \"💻\" --prefix name"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "es6-promisify": "^6.0.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.13",
+    "mongoose-mongodb-errors": "0.0.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10"
+  }
+}
