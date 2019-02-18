@@ -6,7 +6,7 @@ const MongoStore = require('connect-mongo')(session);
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const passport = require('passport');
-const routes = require('./routes/index');
+const routes = require('./routes');
 const errorHandlers = require('./handlers/errorHandlers');
 
 require('./handlers/passport');

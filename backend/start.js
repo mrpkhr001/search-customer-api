@@ -11,11 +11,11 @@ mongoose.connection.on('error', (err) => {
     console.error(`Could not connect to MongoDB : ${err.message}`);
 });
 
-require('./models/Customer');
-require('./models/User');
+require('./src/models/Customer');
+require('./src/models/User');
 
 
-const app = require('./app');
+const app = require('./src/app');
 app.set('port', process.env.PORT || 9003);
 const server = app.listen(app.get('port'), () => {
     console.log(`Express listening → PORT ${server.address().port}`);

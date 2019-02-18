@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prod": "node ./backend/start.js",
-    "test": "test",
     "watch": "nodemon ./backend/start.js --ignore public/",
-    "start": "concurrently \"npm run watch\" --names \"💻\" --prefix name"
+    "start": "concurrently \"npm run watch\" --names \"💻\" --prefix name",
+    "test": "jest a --no-cache --config=./backend/jest.config.js --watch",
+    "test:coverage": "jest --no-cache --config=./backend/jest.config.js --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +30,8 @@
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
+    "jest": "^24.1.0",
+    "jest-html-reporter": "^2.4.4",
     "nodemon": "^1.18.10"
   }
 }
