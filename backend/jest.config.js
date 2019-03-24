@@ -2,6 +2,8 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
+
+    roots: ["./src"],
     verbose: true,
     bail: true,
     testEnvironment: "node",
@@ -11,7 +13,7 @@ module.exports = {
     clearMocks: true,
     collectCoverage: false,
     collectCoverageFrom: [
-        "backend/src/**/*.{js}",
+        "./src/**/*.js",
         "!**/node_modules/**",
         "!**/build/**"
     ],
