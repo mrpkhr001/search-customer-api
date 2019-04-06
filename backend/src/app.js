@@ -3,6 +3,8 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const MongoStore = require('connect-mongo')(session);
 
+require('./dbConnect');
+
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const passport = require('passport');

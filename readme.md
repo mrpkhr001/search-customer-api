@@ -18,7 +18,8 @@
    
 ##### Dev Packages
    * nodemon : Watch and Restart the application on file changes in DEV environment
-   * concurrently : Run multiple process concurrently 
+   * concurrently : Run multiple process concurrently
+   * supertest : Testing APIs 
 
 #### About Application
 This application searches customer names with a given search term
