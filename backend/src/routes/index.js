@@ -19,6 +19,7 @@ router.get('/', (req, res) => {
    * /login                       : \`POST\` Log into application {email, password}                          
    * /logout                      : \`GET\` Logout from application    </pre>`);
 });
+
 router.get('/search', authCtrl.isLoggedIn, customerCtrl.nameSearch);
 router.post('/add', authCtrl.isLoggedIn, catchErrors(customerCtrl.addCustomer));
 
