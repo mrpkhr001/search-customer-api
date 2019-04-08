@@ -6,7 +6,10 @@ module.exports = {
     roots: ["./src"],
     verbose: true,
     bail: true,
-    testEnvironment: "node",
+    globalSetup: "<rootDir>/jestConfig/setup.js",
+    globalTeardown: "<rootDir>/jestConfig/teardown.js",
+    testEnvironment: "<rootDir>/jestConfig/mongo-environment.js",
+
     testPathIgnorePatterns: [
       "/node_module/"
     ],

@@ -15,6 +15,7 @@ require('./handlers/passport');
 
 // create our Express app
 const app = express();
+app.set("env", process.env.NODE_ENV);
 
 // Takes the raw requests and turns them into usable properties on req.body
 app.use(bodyParser.json());
